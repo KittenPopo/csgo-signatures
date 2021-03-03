@@ -1,6 +1,6 @@
 // SIGNATURES FOR CLIENT.DLL
 void __thiscall CreateAnimationState(AnimState* statePtr, Player* player); // "55 8B EC 56 8B F1 B9 ? ? ? ? C7 46"
-void __vectorcall* UpdateAnimationState(AnimState* statePtr, void*(nullptr), roll, yaw, pitch, void*(nullptr)) // "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 F3 0F 11 54 24"
+void __vectorcall* UpdateAnimationState(AnimState* statePtr, void*(nullptr), roll, yaw, pitch, void*(nullptr)); // "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 F3 0F 11 54 24"
 void __thiscall SetAbsAngles(Player* player, const Angle& angles); // "55 8B EC 83 E4 F8 83 EC 64 53 56 57 8B F1 E8"
 void __thiscall SetAbsOrigin(Player* player, const Vector& pos); // "55 8B EC 83 E4 F8 51 53 56 57 8B F1"
 void __thiscall InvalidatePhysicsRecursive(Player* player, int changeFlags); // "55 8B EC 83 E4 F8 83 EC 0C 53 8B 5D 08 8B C3 56 83 E0 04"
@@ -14,7 +14,7 @@ void __thiscall SolveDependencies(IKContext* thisptr, Vector*, Quaternion*, Matr
 void __thiscall AccumulatePose(CBoneSetup* thisptr, Vector* pos, Quaternion* q, int sequence, float cycle, float weight, float time, IKContext* pIKContext); // "55 8B EC 83 E4 F0 B8 ?? ?? ?? ?? E8 ?? ?? ?? ?? A1 ?? ?? ?? ??"
 void __thiscall AddDependencies(CIKContext* this, float, int, int, float, float); // "55 8B EC 81 EC BC 00 00 00 53 56 57"
 void __thiscall AttachmentHelper(Player* thisptr, CStudioHdr*); // "55 8B EC 83 EC 48 53 8B 5D 08 89 4D F4"
-bool LineGoesThroughSmoke(Vector start, Vector end); // "55 8B EC 83 EC 08 8B 15 ? ? ? ? 0F 57 C0"
+bool __cdecl LineGoesThroughSmoke(Vector start, Vector end); // "55 8B EC 83 EC 08 8B 15 ? ? ? ? 0F 57 C0"
 int __thiscall FindHudElement(Hud* thisptr, const char* name); // "55 8B EC 53 8B 5D 08 56 57 8B F9 33 F6 39 77 28"
 void __thiscall ClearNotices(void* thisptr); // "55 8B EC 83 EC 0C 53 56 8B 71 58"
 bool __thiscall PhysicsRunThink(Player* thisptr, int index); // "55 8B EC 83 EC 10 53 56 57 8B F9 8B 87 ? ? ? ? C1 E8 16"
