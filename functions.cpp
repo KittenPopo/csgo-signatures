@@ -1,6 +1,7 @@
 AccumulatePose() -> "55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? A1 ? ? ? ?"; // client.dll
 AddDependencies() -> "55 8B EC 81 EC BC 00 00 00 53 56 57"; // client.dll
 AttachmentHelper() -> "55 8B EC 83 EC 48 53 8B 5D 08 89 4D F4"; // client.dll
+CCSGOPlayerAnimState::Update() -> "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 F3"; // client.dll
 CL_Move() -> "55 8B EC 81 EC ? ? ? ? 53 56 57 8B 3D ? ? ? ? 8A"; // engine.dll
 CalcAbsolutePosition() -> "55 8B EC 83 E4 F0 83 EC 68 80 3D"; // client.dll
 CalcAbsoluteVelocity() -> "55 8B EC 83 E4 F8 83 EC 1C 53 56 57 8B F9 F7"; // client.dll
@@ -34,14 +35,17 @@ RevealRanks() -> "55 8B EC 8B 0D ? ? ? ? 68"; // client.dll
 SetAbsAngles() -> "55 8B EC 83 E4 F8 83 EC 64 53 56 57 8B F1 E8"; // client.dll
 SetAbsOrigin() -> "55 8B EC 83 E4 F8 51 53 56 57 8B F1"; // client.dll
 SetDormant() -> "55 8B EC 53 8B 5D 08 56 8B F1 88 9E ? ? 00 00"; // client.dll
-SetupAction() -> "83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 10 56 8B F1 C6"; // server.dll
+SetUpAimMatrix() -> "55 8B EC 81 EC ? ? ? ? 53 56 57 8B 3D"; // client.dll
+SetUpLean() -> "55 8B EC 83 E4 F8 A1 ? ? ? ? 83 EC 20 F3"; // client.dll
+SetUpMovement() -> "8B EC 83 E4 F8 81 EC ? ? ? ? 56 57 8B 3D ? ? ? ? 8B " - 1; // client.dll
+SetUpVelocity() -> "55 8B EC 83 E4 F8 83 EC 30 56 57 8B 3D"; // client.dll
+SetUpWeaponAction() -> "55 8B EC 51 53 56 57 8B F9 8B 77 60"; // client.dll
+SetUpWholeBodyAction() -> "55 8B EC 83 EC 08 56 57 8B F9 8B 77"; // client.dll
 SetupBones() -> "55 8B EC 83 E4 F0 B8 D8"; // client.dll
-SetupLean() -> "55 8B EC 83 E4 F8 A1 ? ? ? ? 83 EC 20 F3 0F 10 48 10 56 57 8B F9"; // client.dll
 SetupMovement() -> "8B EC 83 E4 F8 83 EC 0C 53 56 57 8B 7D 08 8B F1 F3" - 1;  // client.dll
 ShouldSkipAnimationFrame() -> "57 8B F9 8B 07 8B 80 ? ? ? ? FF D0 84 C0 75 02"; // client.dll
 SolveDependencies() -> "55 8B EC 83 E4 F0 81 EC ? ? ? ? 8B 81"; // client.dll
 StandardBlendingRules() -> "55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? 56 8B 75 08 57 8B F9 85 F6"; // client.dll
-UpdateAnimationState() -> "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 F3 0F 11 54 24"; // client.dll
 UpdateClientsideAnimation() -> "55 8B EC 51 56 8B F1 80 BE ? ? ? ? ? 74 36"; // client.dll
 UpdateTargets() -> "55 8B EC 83 E4 F0 81 EC ? ? ? ? 33 D2"; // client.dll
 WriteUserCmd() -> "55 8B EC 83 E4 F8 51 53 56 8B D9"; // client.dll
