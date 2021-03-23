@@ -1,0 +1,3 @@
+CurrentCommand -> "89 BE ? ? ? ? E8 ? ? ? ? 85" + 2; // client.dll
+LastCmd -> "8D 8E ? ? ? ? 89 5C 24 3C" + 2; // client.dll
+AnimationState -> "8B 8E ? ? ? ? F3 0F 10 48 ? E8 ? ? ? ? C7" + 3; // client.dll
