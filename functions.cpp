@@ -1,4 +1,5 @@
 AccumulatePose() -> "55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? A1 ? ? ? ?"; // client.dll
+AddEconItem() -> "55 8B EC 83 E4 F8 A1 ? ? ? ? 83 EC 14 53 56 57 8B F9 8B 08"; // client.dll
 AddDependencies() -> "55 8B EC 81 EC BC 00 00 00 53 56 57"; // client.dll
 AttachmentHelper() -> "55 8B EC 83 EC 48 53 8B 5D 08 89 4D F4"; // client.dll
 BuildTransformations() -> "83 E4 F0 81 EC ? ? ? ? 56 57 8B F9 8B 0D ? ? ? ? 89" - 1; // client.dll
