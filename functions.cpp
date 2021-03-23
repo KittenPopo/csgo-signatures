@@ -10,6 +10,7 @@ CCSGOPlayerAnimState::Update() -> "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 F3"; /
 CClientShadowMgr::InitDepthTextureShadow() -> "55 8B EC 83 EC 54 53 8B D9 8B 0D ? ? ? ? 89"; // client.dll
 CEffectsList::DrawEffects() -> "55 8B EC 83 EC 08 A1 ? ? ? ? 89 4D FC 8B"; // client.dll
 CL_Move() -> "55 8B EC 81 EC ? ? ? ? 53 56 57 8B 3D ? ? ? ? 8A"; // engine.dll
+CL_SendMove() -> "55 8B EC A1 ? ? ? ? 81 EC ? ? ? ? B9 ? ? ? ? 53 8B 98"; //engine.dll
 CModelRenderSystem::DrawBrushModels() -> "55 8B EC 83 E4 F8 83 EC 24 53 56 57 8B 7D 0C 8B D9"; // client.dll
 C_BaseAnimating::DrawModel() -> "55 8B EC 83 EC 14 53 56 8B F1 8B 0D ? ? ? ? 57 89"; // client.dll
 C_BaseCombatWeapon::DrawModel() -> "55 8B EC 51 56 8B F1 8B 0D ? ? ? ? 57 8B B9"; // client.dll
