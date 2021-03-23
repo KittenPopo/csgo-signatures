@@ -46,37 +46,37 @@ RevealRanks() -> "55 8B EC 8B 0D ? ? ? ? 68";
 
 CalcAbsoluteVelocity() -> "55 8B EC 83 E4 F8 83 EC 1C 53 56 57 8B F9 F7";
 
-CalcAbsolutePosition() -> "55  8B  EC  83  E4  F0  83  EC  68 80 3D";
+CalcAbsolutePosition() -> "55 8B EC 83 E4 F0 83 EC 68 80 3D";
 
-SetDormant() -> "55  8B  EC  53  8B  5D  08  56  8B  F1  88  9E  ??  ??  00  00";
+SetDormant() -> "55 8B EC 53 8B 5D 08 56 8B F1 88 9E ? ? 00 00";
 
-LockStudioHdr() -> "55  8B  EC  51  53  8B  D9  56  57  8D  B3";
+LockStudioHdr() -> "55 8B EC 51 53 8B D9 56 57 8D B3";
 
-IsCarryingHostage() -> "55  8B  EC  8B  09  83  F9  FF";
+IsCarryingHostage() -> "55 8B EC 8B 09 83 F9 FF";
 
-FindElement() -> "55  8B  EC  53  8B  5D  08  56  57  8B  F9  33  F6  39  77  28";
+FindElement() -> "55 8B EC 53 8B 5D 08 56 57 8B F9 33 F6 39 77 28";
 
-OnLand() -> "55  8B  EC  83  E4  F8  81  EC  28  02  00  00  56  8B  F1  F3  0F  11  4C  24  08";
+OnLand() -> "55 8B EC 83 E4 F8 81 EC 28 02 00 00 56 8B F1 F3 0F 11 4C 24 08";
 
-HasC4() -> "56  8B  F1  85  F6  74  31  8B  06  8B  80  ??  ??  ??  ??  FF  D0  84  C0  74  ??";
+HasC4() -> "56 8B F1 85 F6 74 31 8B 06 8B 80 ? ? ? ? FF D0 84 C0 74 ?";
 
 SetupMovement() -> "8B EC 83 E4 F8 83 EC 0C 53 56 57 8B 7D 08 8B F1 F3" - 1;
 
-SetupLean() -> "55  8B  EC  83  E4  F8  A1  ??  ??  ??  ??  83  EC  20  F3  0F  10  48  10  56  57  8B  F9";
+SetupLean() -> "55 8B EC 83 E4 F8 A1 ? ? ? ? 83 EC 20 F3 0F 10 48 10 56 57 8B F9";
 
-ClearDeathNotices() -> "55  8B  EC  83  EC  0C  53  56  8B  71  58";
+ClearDeathNotices() -> "55 8B EC 83 EC 0C 53 56 8B 71 58";
 
-GetWeaponMoveAnimation() -> "53  56  57  8B  F9  33  F6  8B  4F  60  8B  01  FF  90";
+GetWeaponMoveAnimation() -> "53 56 57 8B F9 33 F6 8B 4F 60 8B 01 FF 90";
 
-GetSequenceLinearMotion() -> "55  8B  EC  83  EC  0C  56  8B  F1  57  8B  FA  85  F6  75  14  68";
+GetSequenceLinearMotion() -> "55 8B EC 83 EC 0C 56 8B F1 57 8B FA 85 F6 75 14 68";
 
-IsInIronsight() -> "53  56  8B  F1  57  8B  4E  3C  85  C9  0F  84  ??  ??  ??  ??  8B  81";
+IsInIronsight() -> "53 56 8B F1 57 8B 4E 3C 85 C9 0F 84 ? ? ? ? 8B 81";
 
-WriteUserCmd() -> "55  8B  EC  83  E4  F8  51  53  56  8B  D9";
+WriteUserCmd() -> "55 8B EC 83 E4 F8 51 53 56 8B D9";
 
-IsEntityBreakable() -> "55  8B  EC  51  56  8B  F1  85  F6  74  ??  83  BE"
+IsEntityBreakable() -> "55 8B EC 51 56 8B F1 85 F6 74 ? 83 BE"
 
-LineGoesThroughSmoke() -> "55  8B  EC  83  EC  08  8B  15  ??  ??  ??  ??  0F"
+LineGoesThroughSmoke() -> "55 8B EC 83 EC 08 8B 15 ? ? ? ? 0F"
 
 // SIGNATURES FOR ENGINE.DLL
 
