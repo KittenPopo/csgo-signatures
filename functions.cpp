@@ -34,7 +34,8 @@
 	ClearNotices() = "55 8B EC 83 EC 0C 53 56 8B 71 58"; 
 	ClipRayToHitbox() = "55 8B EC 83 E4 F8 F3 0F 10 42"; 
 	CreateAnimationState() = "55 8B EC 56 8B F1 B9 ? ? ? ? C7 46"; 
-	CreateMove() = "55 8B EC 8B 0D ? ? ? ? 85 C9 75 06 B0"; 
+	CreateMove() = "55 8B EC 8B 0D ? ? ? ? 85 C9 75 06 B0";
+	DevShotGenerator_Usage() = "55 8B EC 51 56 57 8B F9 80 3F 00 74 7B 8B 35 ? ? ? ? 68 ? ? ? ? FF D6";
 	DoProceduralFootPlant() = "55 8B EC 83 E4 F8 81 EC FC 00 00 00 53 56 8B F1 57"; 
 	FindElement() = "55 8B EC 53 8B 5D 08 56 57 8B F9 33 F6 39 77 28"; 
 	FindHudElement() = "55 8B EC 53 8B 5D 08 56 57 8B F9 33 F6 39 77 28"; 
@@ -91,5 +92,6 @@
 	CL_Move() = "55 8B EC 81 EC ? ? ? ? 53 56 57 8B 3D ? ? ? ? 8A"; 
 	CL_SendMove() = "55 8B EC A1 ? ? ? ? 81 EC ? ? ? ? B9 ? ? ? ? 53 8B 98"; 
 	ChngeClantag() = "53 56 57 8B DA 8B F9 FF 15";
-	FireEventIntern() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B D9 56 57 89 5C 24 0C"; 
+	FireEventIntern() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B D9 56 57 89 5C 24 0C";
+	Reload_vjobs() = "83 3D ? ? ? ? ? 74 48 8B 0D ? ? ? ?";
 }
