@@ -72,15 +72,15 @@
 	C_BaseAnimating::SetupBones() = "55 8B EC 83 E4 F0 B8 D8";  
 	C_BaseAnimating::StandardBlendingRules() = "55 8B EC 83 E4 F0 B8 F8 10"; 
 	C_BaseAnimating::BuildTransformations() = "55 8B EC 83 E4 F0 81 EC  E8 01 00 00 56 57"; 
-	C_CSPlayer::ShouldSkipAnimationFrame() = "57 8B F9 8B 07 8B 80 ? ? ? ? FF D0 84 C0 75 02"; 
+	ShouldSkipAnimationFrame() = "57 8B F9 8B 07 8B 80 ? ? ? ? FF D0 84 C0 75 02"; 
 	C_CSPlayer::UpdateClientsideAnimation() = "55 8B EC 51 56 8B F1 80 BE ? ? ? ? ? 74 36"; 
 	C_CSPlayer::InvalidatePhysicsRecursive() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B 5D 08 8B C3"; 
 	C_CSPlayer::GetEyePosition() = "55 8B EC 56 8B 75 08 57 8B F9 56 8B 07 FF 90"; 
 	C_CSPlayer::AttachmentHelper() = "55 8B EC 83 EC 48 53 8B 5D 08 89 4D F4"; 
 	C_CSPlayer::GetSequenceActivity() = "55 8B EC 53 8B 5D 08 56 8B F1 83";
 	C_CSPlayer::LookupSequence() = "85 C0 74 07 8B CE E8 ? ? ? ? 8B B6 ? ? ? ? 85 F6 74" - 0x18; 
-	C_Input::WriteUserCmdDeltaToBuffer() = "55 8B EC 83 EC 68 53 56 8B D9 C7"; 
-	C_Input::CAM_Think() = "55 8B EC 83 E4 F8 81 EC ? ? ? ? 56 8B F1 8B 0D ? ? ? ? 57 85 C9"; 
+	WriteUserCmdDeltaToBuffer() = "55 8B EC 83 EC 68 53 56 8B D9 C7"; 
+	CAM_Think() = "55 8B EC 83 E4 F8 81 EC ? ? ? ? 56 8B F1 8B 0D ? ? ? ? 57 85 C9"; 
 	SolveDependencies() = "55 8B EC 83 E4 F0 81 EC ? ? ? ? 8B 81"; 
 	ThreadedBoneSetup() = "55 8B EC 8B 0D ? ? ? ? 83 EC 24"; 
 	UTIL_TraceLine() = "55 8B EC 83 E4 F0 83 EC 7C 56 52";
@@ -94,4 +94,11 @@
 	CL_SendMove() = "55 8B EC A1 ? ? ? ? 81 EC ? ? ? ? B9 ? ? ? ? 53 8B 98"; 
 	ChngeClantag() = "53 56 57 8B DA 8B F9 FF 15";
 	FireEventIntern() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B D9 56 57 89 5C 24 0C"; 
+}
+
+[SERVER.dll] {
+	CStudioHdr::SelectWeightedSequenceFromModifiers() = "55 8B EC 83 EC 2C 53 56 8B 75 08 8B D9";
+	ModifyEyePosition() = "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 8B 4F";
+	CCSGOPlayerAnimState::Update() = "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 F3";
+	SetupWeaponAction() = "83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 10 56 8B F1 C6" - 9;
 }
