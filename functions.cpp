@@ -72,7 +72,7 @@
 	C_BaseAnimating::SetupBones() = "55 8B EC 83 E4 F0 B8 D8";  
 	C_BaseAnimating::StandardBlendingRules() = "55 8B EC 83 E4 F0 B8 F8 10"; 
 	C_BaseAnimating::BuildTransformations() = "55 8B EC 83 E4 F0 81 EC  E8 01 00 00 56 57"; 
-	ShouldSkipAnimationFrame() = "57 8B F9 8B 07 8B 80 ? ? ? ? FF D0 84 C0 75 02"; 
+	C_CSPlayer::ShouldSkipAnimationFrame() = "57 8B F9 8B 07 8B 80 ? ? ? ? FF D0 84 C0 75 02"; 
 	C_CSPlayer::UpdateClientsideAnimation() = "55 8B EC 51 56 8B F1 80 BE ? ? ? ? ? 74 36"; 
 	C_CSPlayer::InvalidatePhysicsRecursive() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B 5D 08 8B C3"; 
 	C_CSPlayer::GetEyePosition() = "55 8B EC 56 8B 75 08 57 8B F9 56 8B 07 FF 90"; 
