@@ -84,6 +84,7 @@
 	RecordBones() = "C3 55 8B EC 83 E4 F8 81 EC ? ? ? ? 53 56 8B F1 8B 0D" + 2; 
 	RevealRanks() = "55 8B EC 8B 0D ? ? ? ? 68"; 
 	RunSimulation() = "55 8B EC 83 EC 08 53 8B 5D 10 56 57 FF 75 0C 8B F1 F3 0F 11 55";
+	SetupBonesForAttachmentQueries() = "55 8B EC 83 EC 14 83 3D ? ? ? ? ? 53";
 	ShouldSkipAnimationFrame() = "57 8B F9 8B 07 8B 80 ? ? ? ? FF D0 84 C0 75 02"; 
 	SolveDependencies() = "55 8B EC 83 E4 F0 81 EC ? ? ? ? 8B 81"; 
 	ThreadedBoneSetup() = "55 8B EC 8B 0D ? ? ? ? 83 EC 24"; 
