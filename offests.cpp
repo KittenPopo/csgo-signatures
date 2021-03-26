@@ -6,6 +6,7 @@
 	(OFFSET) MostRecentModelBoneCounter = this + ["8B 86 ? ? ? ? 3B 05 ? ? ? ? 74" + 2]; // m_iMostRecentModelBoneCounter from player
 	(OFFSET) SpawnTime = this + ["89 87 ? ? ? ? 89 B7 ? ? ? ? 89" + 2]; // Spawn time from player
 	(OFFSET) CachedBoneData = *(this + ["FF B7 ? ? ? ? 52" + 2]) + 4; // m_CachedBoneData from player
+	(PTR) GlowObjectManager = *(["0F 11 05 ? ? ? ? 83 C8 01" + 3]);
 	(PTR) ModelBoneCounter = *(["80 3D ? ? ? ? ? 74 16 A1 ? ? ? ? 48 C7 81" + 10]); // g_iModelBoneCounter
-	(PTR) GlowObjectManager = *(["0F 11 05 ? ? ? ? 83 C8 01" + 3]); //dwGlowObjectManager
+	
 }
