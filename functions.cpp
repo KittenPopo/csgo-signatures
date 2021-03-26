@@ -97,6 +97,7 @@
 [ENGINE.dll] {
 	CL_Move() = "55 8B EC 81 EC ? ? ? ? 53 56 57 8B 3D ? ? ? ? 8A"; 
 	CL_SendMove() = "55 8B EC A1 ? ? ? ? 81 EC ? ? ? ? B9 ? ? ? ? 53 8B 98"; 
+	CL_ReadPackets() = "53 8A D9 8B 0D ? ? ? ? 56 57 8B B9";
 	ChangeClantag() = "53 56 57 8B DA 8B F9 FF 15";
 	FireEventIntern() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B D9 56 57 89 5C 24 0C"; 
 }
