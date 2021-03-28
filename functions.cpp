@@ -55,6 +55,7 @@
 	GetSequenceLinearMotion() = "55 8B EC 83 EC 0C 56 8B F1 57 8B FA 85 F6 75 14 68"; 
 	GetShotgunSpread() = "55 8B EC 83 EC 10 56 8B 75 08 8D"; 
 	GetToolRecordingState() = "55 8B EC 83 EC 08 53 56 8B F1 8B 0D ? ? ? ? 57 85";  
+	GetUserCmd() = "55 8B EC 8B 45 08 56 57 8B F9 83";
 	GetWeaponMoveAnimation() = "53 56 57 8B F9 33 F6 8B 4F 60 8B 01 FF 90"; 
 	GetWeaponPrefix() = "53 56 57 8B F9 33 F6 8B 4F 60"; 
 	GloweEffectSpectator() = "55 8B EC 83 EC 14 53 8B 5D 0C 56 57 85 DB 74"; 
@@ -90,6 +91,7 @@
 	ThreadedBoneSetup() = "55 8B EC 8B 0D ? ? ? ? 83 EC 24"; 
 	UTIL_TraceLine() = "55 8B EC 83 E4 F0 83 EC 7C 56 52";
 	UpdateTargets() = "55 8B EC 83 E4 F0 81 EC ? ? ? ? 33 D2"; 
+	ValidateUserCmd() = "55 8B EC 8B 55 08 3B CA";
 	WriteUserCmd() = "55 8B EC 83 E4 F8 51 53 56 8B D9"; 
 	WriteUserCmdDeltaToBuffer() = "55 8B EC 83 EC 68 53 56 8B D9 C7"; 
 }
@@ -97,7 +99,6 @@
 [ENGINE.dll] {
 	CL_Move() = "55 8B EC 81 EC ? ? ? ? 53 56 57 8B 3D ? ? ? ? 8A"; 
 	CL_SendMove() = "55 8B EC A1 ? ? ? ? 81 EC ? ? ? ? B9 ? ? ? ? 53 8B 98"; 
-	CL_ReadPackets() = "53 8A D9 8B 0D ? ? ? ? 56 57 8B B9";
 	ChangeClantag() = "53 56 57 8B DA 8B F9 FF 15";
 	FireEventIntern() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B D9 56 57 89 5C 24 0C"; 
 }
