@@ -101,7 +101,7 @@
 	CL_SendMove() = "55 8B EC A1 ? ? ? ? 81 EC ? ? ? ? B9 ? ? ? ? 53 8B 98"; 
 	ChangeClantag() = "53 56 57 8B DA 8B F9 FF 15";
 	FireEventIntern() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B D9 56 57 89 5C 24 0C"; 
-	GetProductVersionString() = "B9 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? 6A 06" + 1;
+	GetEngineBuildNumber() = "B9 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? 6A 06" + 1;
 }
 
 [SERVER.dll] {
