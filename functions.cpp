@@ -93,7 +93,7 @@
 	UpdateTargets() = "55 8B EC 83 E4 F0 81 EC ? ? ? ? 33 D2"; 
 	ValidateUserCmd() = "55 8B EC 8B 55 08 3B CA";
 	WriteUserCmd() = "55 8B EC 83 E4 F8 51 53 56 8B D9"; 
-	WriteUserCmdDeltaToBuffer() = "55 8B EC 83 EC 68 53 56 8B D9 C7"; 
+	WriteUserCmdDeltaToBuffer() = "55 8B EC 83 EC 68 53 56 8B D9 C7";
 }
 
 [ENGINE.dll] {
@@ -108,4 +108,5 @@
 	CStudioHdr::SelectWeightedSequenceFromModifiers() = "55 8B EC 83 EC 2C 53 56 8B 75 08 8B D9";
 	ModifyEyePosition() = "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 8B 4F";
 	SetupWeaponAction() = "83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 10 56 8B F1 C6" - 9;
+	CCSGameStats::IncrementStat() = "55 8B EC 56 57 8B 7D 08 8B F1 85 FF 0F 84 ? ? ? ? 80";
 }
