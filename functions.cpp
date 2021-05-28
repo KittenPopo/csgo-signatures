@@ -52,7 +52,6 @@
 	GetSequenceActivity() = "55 8B EC 53 8B 5D 08 56 8B F1 83";
 	GetSequenceDuration() = "8B 8E ? ? ? ? 85 C9 74 49 83 39 00 74 44 8B 41" - 0x23;
 	GetSequenceLinearMotion() = "55 8B EC 83 EC 0C 56 8B F1 57 8B FA 85 F6 75 14 68"; 
-	GetSequenceLinearMotion() = "55 8B EC 83 EC 0C 56 8B F1 57 8B FA 85 F6 75 14 68"; 
 	GetShotgunSpread() = "55 8B EC 83 EC 10 56 8B 75 08 8D"; 
 	GetToolRecordingState() = "55 8B EC 83 EC 08 53 56 8B F1 8B 0D ? ? ? ? 57 85";  
 	GetUserCmd() = "55 8B EC 8B 45 08 56 57 8B F9 83";
@@ -109,4 +108,5 @@
 	ModifyEyePosition() = "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 8B 4F";
 	SetupWeaponAction() = "83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 10 56 8B F1 C6" - 9;
 	CCSGameStats::IncrementStat() = "55 8B EC 56 57 8B 7D 08 8B F1 85 FF 0F 84 ? ? ? ? 80";
+	PlayerByIndex() = "85 C9 7E 32 A1";
 }
