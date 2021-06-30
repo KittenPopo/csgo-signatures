@@ -45,6 +45,7 @@
 	ClipRayToHitbox() = "55 8B EC 83 E4 F8 F3 0F 10 42";   
 	CreateAnimationState() = "55 8B EC 56 8B F1 B9 ? ? ? ? C7 46";
 	DevShotGenerator_Usage() = "55 8B EC 51 56 57 8B F9 80 3F 00 74 7B 8B 35 ? ? ? ? 68 ? ? ? ? FF D6";
+	DoExtraBoneProcessing() = "55 8B EC 83 E4 F8 81 EC ? ? ? ? 53 56 8B F1 57 89 74 24 1C 80";
 	DoProceduralFootPlant() = "55 8B EC 83 E4 F0 83 EC 78 56 8B F1 57 8B 56"; 
 	FindElement() = "55 8B EC 53 8B 5D 08 56 57 8B F9 33 F6 39 77 28"; 
 	FindHudElement() = "55 8B EC 53 8B 5D 08 56 57 8B F9 33 F6 39 77 28";  
